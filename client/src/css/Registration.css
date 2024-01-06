@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+    .regClass {
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .regClass form {
+        padding: 20px;
+        margin: 5em auto 0;
+    }
+
+    .background-dashboard {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .background-dashboard h2 {
+        margin-bottom: 20px;
+    }
+
+    .background-dashboard .d-flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .background-dashboard .d-flex .btn {
+        margin-bottom: 10px;
+    }
+}
