@@ -7,6 +7,7 @@ import BlackDeleteIcon from '../images/Black-Delete-Icon.png';
 import RedDeleteIcon from '../images/Red-Delete-Icon.png';
 import '../css/Profile.css';
 import '../css/Dashboard.css';
+import '../css/SavedFlashCards.css';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -112,29 +113,21 @@ const SavedFlashCards = (props) => {
           />
         </h2>
         <div className="d-flex justify-content-center ">
-          <ul className="list-unstyled w-50 language-list">
-            {savedFlashCards.length > 0 ? (
-              savedFlashCards.map((flashcard) => (
-                <div className="d-flex align-items-center my-3 px-4" key={flashcard.id}>
-                  <Link to={`/checksavedflashcard/${flashcard.id}/${languageId}`} className="language">
-                    <li className="d-flex align-items-center justify-content-between p-3">
-                      <div>{flashcard.word}</div>
-                      <div>{flashcard.translation}</div>
-                    </li>
-                  </Link>
-                  <button className="delete" onClick={() => handleDelete(flashcard.id)}>
-                    <div className="icon-container">
-                      <img src={BlackDeleteIcon} alt="" className="delete_icon black" />
-                      <img src={RedDeleteIcon} alt="" className="delete_icon red" />
-                    </div>
-                  </button>
+          <ul className="list-unstyled language-list">
+            <div className="d-flex align-items-center my-3 px-4 flashcard" key="1">
+              <Link to={`/checksavedflashcard/`} className="language">
+                <li className="d-flex align-items-center justify-content-between p-3 flashcard-content">
+                  <p className="flashcard-word">ojdoioidjidsljdnssakjdkjdbjkfhdsajdhjj</p>
+                  <p className="flashcard-translation">dsjisjdjdiosdkkjjzldksjfmkldsmkasnjks</p>
+                </li>
+              </Link>
+              <button className="delete" >
+                <div className="icon-container">
+                  <img src={BlackDeleteIcon} alt="" className="delete_icon black" />
+                  <img src={RedDeleteIcon} alt="" className="delete_icon red" />
                 </div>
-              ))
-            ) : (
-              <div className="empty-list-message mt-5">
-                <p>You have no saved cards.</p>
-              </div>
-            )}
+              </button>
+            </div>
           </ul>
         </div>
       </div>

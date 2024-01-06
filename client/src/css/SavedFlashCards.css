@@ -1,0 +1,36 @@
+.language-list {
+    width: 75%;
+}
+
+
+@media (max-width: 768px) {
+    .language-list {
+        width: 100%;
+        height: 400px;
+    }
+    .flashcard {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px; /* Adjust this value as needed */
+    }
+
+    .flashcard-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .flashcard-word, .flashcard-translation {
+        text-align: center;
+        font-size: 14px; /* Adjust this value as needed */
+    }
+
+    .flashcard-content {
+        border-bottom: 1px solid #000; /* Adjust color as needed */
+        padding-bottom: 10px; /* Adjust as needed */
+    }
+    
+    .flashcard-translation {
+        border-top: 1px solid #000; /* Adjust color as needed */
+        padding-top: 10px; /* Adjust as needed */
+    }
+}
