@@ -147,8 +147,10 @@ const Dashboard = (props) => {
             <div className="d-flex align-items-center my-3 px-4 flashcard" key="1">
               <Link to={`/flashcard/$`} className="language">
                 <li className="d-flex align-items-center justify-content-between p-3">
-                  <p className='dashboardLetter'>osoiajdid</p>
-                  <p>kajsndjsdna</p>
+                  <div className='letterMobile gap-5'>
+                    <p className='dashboardLetter'>osoiajdidsdljkn</p>
+                    <p className='dashboardLetter'>kajsndjsdnasldjn</p>
+                  </div>
                   <div>
                     <Link to={`/savedflashcards/$`} style={{ textDecoration: 'none' }}>
                       <button className="btn favorite">
