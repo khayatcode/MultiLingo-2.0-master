@@ -143,38 +143,28 @@ const Dashboard = (props) => {
       <div className='container mt-5'>
         <h2 className="my-4 text-decoration-underline">Languages:</h2>
         <div className="d-flex justify-content-center ">
-          <ul className="list-unstyled w-50 language-list">
-            {languages.length > 0 ? (
-              languages.map((language) => (
-                <div className="d-flex align-items-center my-3 px-4" key={language.id}>
-                  <Link to={`/flashcard/${language.id}`} className="language">
-                    <li className="d-flex align-items-center justify-content-between p-3">
-                      <div>{language.language}</div>
-                      <div>{language.intensity}</div>
-                      <div>
-                        <Link to={`/savedflashcards/${language.id}`} style={{ textDecoration: 'none' }}>
-                          <button className="btn favorite">
-                            <img src={FavoriteIcon} alt="" className="favorite_icon" /> Favorited
-                          </button>
-                        </Link>
-                      </div>
-                    </li>
-                  </Link>
-                  <button className="delete" onClick={() => handleDelete(language.id)}>
-                    <div className="icon-container">
-                      <img src={BlackDeleteIcon} alt="" className="delete_icon black" />
-                      <img src={RedDeleteIcon} alt="" className="delete_icon red" />
-                    </div>
-                  </button>
+          <ul className="list-unstyled language-list">
+            <div className="d-flex align-items-center my-3 px-4 flashcard" key="1">
+              <Link to={`/flashcard/$`} className="language">
+                <li className="d-flex align-items-center justify-content-between p-3">
+                  <p className='dashboardLetter'>osoiajdid</p>
+                  <p>kajsndjsdna</p>
+                  <div>
+                    <Link to={`/savedflashcards/$`} style={{ textDecoration: 'none' }}>
+                      <button className="btn favorite">
+                        <img src={FavoriteIcon} alt="" className="favorite_icon" /> Favorited
+                      </button>
+                    </Link>
+                  </div>
+                </li>
+              </Link>
+              <button className="delete" >
+                <div className="icon-container">
+                  <img src={BlackDeleteIcon} alt="" className="delete_icon black" />
+                  <img src={RedDeleteIcon} alt="" className="delete_icon red" />
                 </div>
-              ))
-            ) : (
-              <div className="empty-list-message">
-                <Link to={`/addlanguage/${sessionId}`}>
-                  <img src={Cat2add} alt="" className="cat-add-image" />
-                </Link>
-              </div>
-            )}
+              </button>
+            </div>
           </ul>
         </div>
         <div className="d-flex justify-content-center mt-4 mb-5">

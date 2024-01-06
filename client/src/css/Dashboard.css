@@ -188,7 +188,7 @@ li {
 }
 
 .language-list {
-  height: 310px; /* Set your desired height */
+  height: 310px; /* Adjust height as needed */
   overflow-y: scroll; /* Add a vertical scrollbar */
   padding: 0; /* Remove default padding to fit the container */
   margin: 0; /* Remove default margin */
@@ -249,6 +249,7 @@ li {
 .additional-image.active {
   bottom: 0; /* Display the image */
 }
+
 
 
 

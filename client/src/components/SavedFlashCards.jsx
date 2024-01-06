@@ -117,8 +117,8 @@ const SavedFlashCards = (props) => {
             <div className="d-flex align-items-center my-3 px-4 flashcard" key="1">
               <Link to={`/checksavedflashcard/`} className="language">
                 <li className="d-flex align-items-center justify-content-between p-3 flashcard-content">
-                  <p className="flashcard-word">ojdoioidjidsljdnssakjdkjdbjkfhdsajdhjj</p>
-                  <p className="flashcard-translation">dsjisjdjdiosdkkjjzldksjfmkldsmkasnjks</p>
+                  <p className="flashcard-word">ojdoioidjidsljdnssakjdkjdbj</p>
+                  <p className="flashcard-translation">dsjisjdjdiosdkkjjzldk</p>
                 </li>
               </Link>
               <button className="delete" >
